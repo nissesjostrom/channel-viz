@@ -132,7 +132,7 @@
 									// Add Each Datapoint to Array
 									datastreamData.datapoints.forEach(function(datapoint) {
 										points.push({x: new Date(datapoint.at).getTime()/1000.0, y: parseFloat(datapoint.value)});
-										console.log(datapoint.at + ": " + datapoint.value)
+										//console.log(datapoint.at + ": " + datapoint.value)
 									});
 									points.forEach(function(entry){
 										console.log (entry)	
