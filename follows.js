@@ -20,6 +20,7 @@
 		dataColor		= '0A1922', // CSS HEX value of color to represent data (omit leading #)
 		hideForm		= 0; // To hide input form use value of 1, otherwise set to 0
 		divider 	= 80;
+		var x = document.createElement("TABLE");
 
 // Function Declarations
 
@@ -135,7 +136,8 @@
 										//console.log(datapoint.at + ": " + datapoint.value)
 									});
 									points.forEach(function(entry){
-										console.log (entry)	
+										console.log (entry)
+										x.insertRow(entry)
 									});
 
 									// Add Datapoints Array to Graph Series Array
