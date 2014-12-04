@@ -24,7 +24,7 @@
 
 // Function Declarations
 	function toggleTable() {
-	 var lTable = document.getElementById("loginTable");
+	 var lTable = document.getElementById("TABLE");
     	lTable.style.display = (lTable.style.display == "table") ? "none" : "table";
 	}
 	// URL Parameters
