@@ -23,7 +23,10 @@
 		var x = document.createElement("TABLE");
 
 // Function Declarations
-
+	function toggleTable() {
+	 var lTable = document.getElementById("loginTable");
+    	lTable.style.display = (lTable.style.display == "table") ? "none" : "table";
+	}
 	// URL Parameters
 	function getParam(key) {
 	 	var value = location.hash.match(new RegExp(key+'=([^&]*)'));
