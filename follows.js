@@ -19,6 +19,7 @@
 		dataInterval	= 0, // Default interval for data to be displayed (in seconds)
 		dataColor		= '0A1922', // CSS HEX value of color to represent data (omit leading #)
 		hideForm		= 0; // To hide input form use value of 1, otherwise set to 0
+		divider 	= 80;
 
 // Function Declarations
 
@@ -132,6 +133,9 @@
 									datastreamData.datapoints.forEach(function(datapoint) {
 										points.push({x: new Date(datapoint.at).getTime()/1000.0, y: parseFloat(datapoint.value)});
 										console.log(datapoint.at + ": " + datapoint.value)
+									});
+									points.forEach(function(entry){
+										console.log (entry)	
 									});
 
 									// Add Datapoints Array to Graph Series Array
